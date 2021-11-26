@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--display text on button-->
+
+    <EditText
+        android:id="@+id/et_str_to_swap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/simpleButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="swap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_str_to_swap"
+        app:layout_constraintVertical_bias="0.349"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+
+        android:id="@+id/tv_swapped_str"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Steps"
+        app:layout_constraintBottom_toTopOf="@+id/simpleButton"
+        app:layout_constraintEnd_toEndOf="@+id/et_str_to_swap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_str_to_swap"
+        app:layout_constraintTop_toBottomOf="@+id/et_str_to_swap"
+        app:layout_constraintVertical_bias="0.046"
+          />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
